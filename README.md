@@ -1,7 +1,7 @@
 # Bypassing GLIBC 2.32's Safe-Linking Without Leaks into Code Execution: The House of Rust
 The House of Rust is a heap exploitation technique that drops a shell against full PIE binaries that don't leak any addresses.
 
-Check out the official post on [my website](https://c4ebt.github.io/2021/01/22/House-of-Rust.html).
+If you prefer to read this on my website, check out the [official post](https://c4ebt.github.io/2021/01/22/House-of-Rust.html).
 
 ### Breakdown
 The House of Rust leverages a UAF to perform a number of well-known attacks that when combined result in the bypass of single list Safe-Linking without the need for leaks. The weak point it targets to effectively bypass Safe-Linking is the tcache stashing mechanism.
