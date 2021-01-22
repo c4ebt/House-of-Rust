@@ -5,7 +5,7 @@ If you prefer to read this on my website, check out the [official post](https://
 
 ### Breakdown
 The House of Rust leverages a UAF to perform a number of well-known attacks that when combined result in the bypass of single list Safe-Linking without the need for leaks. The weak point it targets to effectively bypass Safe-Linking is the tcache stashing mechanism.
-It utilizes some Heap Feng Shui, one Tcache Stashing Unlink+ attack, one Tcache Stashing Unlink attack, two largebin attacks and targets a stdout FILE stream FSOP attack.
+It utilizes some Heap Feng Shui, one Tcache Stashing Unlink+ attack, one Tcache Stashing Unlink attack, two largebin attacks and finishes off with a FSOP attack on the stdout FILE stream.
 
 ### About Safe-Linking
 
